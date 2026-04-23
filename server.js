@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // ⚠️ MongoDB URL ENV'DEN GELİR (BURAYA YAZMA)
-mongoose.connect(process.env.mongodb+srv://admin@bulbul.a6srjlv.mongodb.net/?appName=bulbul);
+mongoose.connect(process.env.MONGO_URL);
 
 // ================= MODELS =================
 const Listing = mongoose.model("Listing", {
